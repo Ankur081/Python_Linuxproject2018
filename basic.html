@@ -5,10 +5,20 @@
 <br>
 <style>
 table,th,td
-{border: 1px solid black;
+{border: 5px solid black;
 }
 </style>
 <body style="background-color:#FFE4E1">
+<div class="header">
+        <a href="http://webnux.blogspot.com/"class="logo"><h3><b>Webnux</b></h3></a>
+  <div class="header-right">
+          <a class="active" href="basic.html">Basic Task</a><br>
+          <a href="advance.html">Advance</a><br>
+          <a href="manage.html">Memory</a><br>
+          <a href="https://192.168.43.142:4200/">Terminal</a><br>
+          <a href="regi_form.html">Register</a>
+  </div>
+</div>
 <table align="center">
 	<tr><th style="color:red;">Command</th>
 	    <th style="color:red;">Uses of command</th></tr>
@@ -35,10 +45,10 @@ table,th,td
 
 
 <form method=POST action ="/cgi-bin/add.cgi">
-<table>
-<p style="color:red" align="center"> enter any command :</p><input style="color:green;" type=text name=c >
-<tr align="center"><input style="color:red;background-color:lightgreen;" type=submit value= send ></tr>
-</table>
+	<table align="center">
+<p style="color:red" align="center"> enter any command :</p>
+<tr><td><input style="color:green;" type=text name=c></td>
+	<td><input style="color:red;background-color:lightgreen;" type=submit value= submit></td></tr>
 </form>
 
 </body>
