@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <!-- Favicon -->
+  <link href="fevicon.jpg" rel="icon" type="jpg">
+
+  <!-- Styles -->
+  <link href="styles.css" rel="stylesheet">
+  <h1 align="center">....MEMORY MANAGEMENT IN LINUX....</h1>
+</head>
+<body style="background-color:Aqua;">
+<form action="/cgi-bin/basic.cgi" method="POST">
+<div class="header">
+	<a href="#default" class="logo"><h3><b>Webnux</b></h3></a>
+  <div class="header-right">
+	  <a  href="index.html">Basic Task</a><br>
+	  <a href="advance.html">Advance</a><br>
+	  <a  href="memory.html">Memory</a><br>
+	  <a href="terminal.html">Terminal</a><br>
+	  <a href="register.html">Register</a>
+  </div>
+</div>
+
+<h2 align="center">To perform any given task those are given below please click on task button and submit</h2>
+<div>
+<table border=2px align="center">
+<tr><th style="color:red;">select_anyone.</th>
+    <th style="color:red;">Task to perform </th>
+</tr>
+<tr><td><input type="radio" name="cmd" value="sudo tune2fs -l /dev/sdaX "Last mount time""></td><td> To find when was an “ ext ” filesystem last mounted</td></tr>
+<tr><td><input type="radio" name="cmd" value="du -sh"></td><td>Display only the total disk usage (summary) of current directory</td>
+</tr>
+<tr><td><input type="radio" name="cmd" value="du -ah"></td><td>Display disk usage of all files and directories in human readable format</td></tr>
+<tr><td><input type="radio" name="cmd" value="free -m"></td><td>The command free displays information about RAM </td></tr>
+<tr><td><input type="radio" name="cmd" value="df -hT"></td><td>To find all disk with size</td></tr>
+<tr><td><input type="radio" name="cmd" value="fdisk -l"></td><td>To find the all partition in disk</td></tr>
+<tr><td><input type="radio" name="cmd" value="pvdisplay"></td><td>to show the primary volume </td></tr>
+<tr><td><input type="radio" name="cmd" value="lvdisplay"></td><td>To show the vitual group</td></tr>
+</table>
+</div>
+<div class="clearfix"align="center">
+      <button type="reset" name="reset" class="cancelbtn">Reset</button>
+      <button type="submit" name="submit" class="signupbtn" value="submit">proceed Now</button>
+</form>
+</body>
+</html>
