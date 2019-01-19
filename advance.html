@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+         <h1 align="center"><u>...ADVANCE OPERTION IN LINUX...</u></h1>
+</head>
+<br>
+<style>
+table,th,td
+{border: 5px solid black;
+}
+</style>
+<body style="background-color:#A9A9A9">
+<div class="header">
+	<a href="http://webnux.blogspot.com/" class="logo"><h3><b>Webnux</b></h3></a>
+  <div class="header-right">
+	  <a href="basic.html">Basic Task</a><br>
+	  <a class="active" href="advance.html">Advance</a><br>
+	  <a href="manage.html">Memory</a><br>
+	  <a href="https://192.168.43.142:4200/">Terminal</a><br>
+	  <a href="regi_form.html">Register</a><br>
+  </div>
+</div>
+<form action="/cgi-bin/basic.cgi" method="POST">
+<table border="2px" align="center">
+	<tr><th style="color:red">Serial_anyone</th>
+            <th style="color:red">Task to perform </th></tr>
+<tr>
+<td><input type="radio" name="cmd" value="echo /etc/*_ver* /etc/*-rel*; cat /etc/*_ver* /etc/*-rel*"></td><td>To show all the available information about your current distribution, package management and base details</td></tr>
+<tr>
+<td><input type="radio" name="cmd" value="find . -type l ! -exec test -e {} \; -print"></td><td>Find all broken sym links in your system</td></tr>
+<tr>
+<td><input type="radio" name="cmd" value='watch grep \"cpu MHz\" /proc/cpuinfo'></td><td>Monitor CPU speed in real time</td></tr>
+<tr>
+<td><input type="radio" name="cmd" value="tune2fs -l /dev/sda1 | grep 'Filesystem created:'"></td><td>Find the exact installation and date a Linux OS</td>
+</tr>
+<tr>
+<td><input type="radio" name="cmd" value="journalctl -u sleep.target"></td><td> Find when was the last time your system went to sleep</td></tr>
+<tr>
+<td><input type="radio" name="cmd" value="dmesg -wx"></td><td>To monitor Kernel messages in live</td></tr>
+<tr>
+<td><input type="radio" name="cmd" value="ls -alv"></td><td>List hidden files and directories</td></tr>
+<tr>
+<td><input type="radio" name="cmd" value="ifconfig -a"></td><td>Display details of All interfaces including disabled interfaces </td></tr>
+<tr>
+<td><input type="radio" name="cmd" value="netstat -a"></td><td>List all the network ports</td></tr>
+<tr>
+<td><input type="radio" name="cmd" value="top"></td><td>Displays the processes of CPU</td></tr>
+<tr>
+	<td><input type="radio" name="cmd" value="lsof"></td><td>lsof stands for “list open files” and displays all the files that your system has currently opened</td></tr>
+<tr>
+<td><input type="radio" name="cmd" value="free -h"></td><td>Check Current Usage in Human Readable Format</td>
+</tr>
+<tr align="center"><td><button type="reset" name="reset"style="color:Indigo" class="cancelbtn"><u>Reset</u></button></td>
+	<td><button type="submit" name="submit" class="signupbtn"style="color:Indigo" value="submit"><u>submit</u></button></td></tr>
+</table>
+</form>
+</body>
+</html>
