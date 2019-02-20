@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-       <h1 align="center">...MEMORY MANAGEMENT IN LINUX...</h1>
+	<h1 align="center"><u>...MEMORY MANAGEMENT IN LINUX...</u></h1>
 </head>
 <br>
 <style>
 table,th,td
 {border: 5px solid black;
-}
+} 
 </style>
-<body style="background-color:#8FBC8F">
+<body background="index0.jpg">
 <div class="header">
-        <a href="http://webnux.blogspot.com/" class="logo"><h3><b>Webnux</b></h3></a>
+        
   <div class="header-right">
-          <a href="basic.html">Basic Task</a><br>
-          <a class="active" href="advance.html">Advance</a><br>
-          <a href="manage.html">Memory</a><br>
-          <a href="https://192.168.43.142:4200/">Terminal</a><br>
-          <a href="regi_form.html">Register</a><br>
+	  <a href="index.html"><h2 style="color:blue">Index</h2></a><br>
+	  <a href="basic.html" style="color:blue">Basic Task</a><br>
+          <a class="active" href="advance.html" style="color:blue">Advance</a><br>
+          <a href="manage.html" style="color:blue">Memory</a><br>
+          <a href="https://localhost:4200/"style="color:blue">Terminal</a><br>
+          
   </div>
 </div>
 
-<form action="/cgi-bin/basic.cgi" method="Post">
+<form action="/cgi-bin/basic.cgi" method="POST">
 <table border=2px align="center">
 <tr><th style="color:red;">select_anyone.</th>
     <th style="color:red;">Task to perform </th>
 </tr>
-<tr><td><input type="radio" name="cmd" value="sudo tune2fs -l /dev/sdaX "Last mount time""></td><td> To find when was an “ ext ” filesystem last mounted</td></tr>
+<tr><td><input type="radio" name="cmd" value="sudo tune2fs -l /dev/sdaX "></td><td> To find when was an “ ext ” filesystem last mounted</td></tr>
 <tr><td><input type="radio" name="cmd" value="du -sh"></td><td>Display only the total disk usage (summary) of current directory</td>
 </tr>
 <tr><td><input type="radio" name="cmd" value="du -ah"></td><td>Display disk usage of all files and directories in human readable format</td></tr>
