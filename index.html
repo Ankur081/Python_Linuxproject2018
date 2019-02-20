@@ -20,7 +20,7 @@ body {
   padding: 80px;
   text-align: center;
   background: #1abc9c;
-  color: white;
+  color: white;	  
 }
 
 /* Increase the font size of the heading */
@@ -92,13 +92,13 @@ body {
 </style>
 </head>
 <body>
-
 <div class="header">
 	<h1><u>....***WEB USER INTERFACE***....</u></h1>
   <p> <b>Information</b> related of web UI.</p>
 </div>
 
 <div class="navbar">
+  	
   <a href="basic.html" class="active">Basic tasks</a>
   <a href="advance.html">Advance</a>
   <a href="manage.html">Memory</a>
@@ -108,12 +108,20 @@ body {
    
 
 <div class="footer">
-	<h3><b><u>This interface is very useful for every user</u></b></h3>
-	<h4>...keep smile...</h4>
-	<p><h4 align="left">Copyright by:</h4></p>
-         <p><h4 align="left">Contact information:</h4><a href="jsimankur586@gmail.com"style="color:#FF0000">jsimankur586@gmail.com</a></p><br>
-  <p><h2 align="right">Login Here--------></h2></p>
-  <a href="a.html"style="color:#FF0000"><h3 align="right">LOGIN</h3></a>
+	
+         <h3><b><u>This interface is very useful for every user</u></b></h3>
+        <h4>...keep smile..</h4>
+        <p><h4 align="left">Copyright by:</h4></p>
+	<p><h4 align="left">Contact information:</h4><a href="jsimankur586@gmail.com"style="color:#FF0000"><h4 align="left">jsimankur586@gmail.com</h4></a></p><br>
+	
+	<form method=POST action ="/cgi-bin/add.cgi">
+        <table align="center">
+<p style="color:red" align="center"> enter any command :</p>
+<tr><td><input style="color:green;" type=text name="cmd"></td>
+        <td><input style="color:red;background-color:lightgreen;" type=submit value= submit></td></tr>
+</form>
+
+
 </div>
 
 </body>
